@@ -1,10 +1,50 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans';
+}
+p {
+    font-size: 12px;
+}
 header {
     background-image: url("img/mastehead.jpg");
-    background-position: -900px 0;
+    background-size: 250%;
     background-repeat: no-repeat;
-    position: relative;
-    width: 375px;
-    background-size: cover;
-    
+    background-position: center;
+    border: solid 3px red;
+    height: 60vh; 
 }
+.logo-take {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 3px violet; 
+}
+.logo {
+    width: 25px;
+    height: 25px;
+}
+.logo-take p {
+    font-style: italic;
+    font-size: 100%;
+}
+.text-header {
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    color: white;
+    border: solid 3px orange;
+}
+.iphone {
+    visibility: hidden;
+}
+/* Flex-box */
