@@ -25,7 +25,6 @@ header {
     width: 18%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border: solid 3px violet; 
 }
 .logo {
@@ -39,12 +38,49 @@ header {
 .text-header {
     width: 40%;
     position: absolute;
-    left: 10%;
-    bottom: 50%;
+    left: 8%;
+    bottom: 45%;
     color: white;
     border: solid 3px orange;
 }
 .iphone {
-    visibility: hidden;
+    display: none;
+}
+.rose {
+    background-color: #f4979f;
+}
+.violet {
+    background-color: #605f7f;
+}
+.our-clients {
+    background-image: url("img/box-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.sign-up {
+    background-image: url("img/box-bg-lg.jpg");
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+}
+.vert {
+    background-color: #83c89c;
+    padding: 3rem 1.5rem;
+}
+.bleu-marin {
+    background-color: #172432;
+}
+.power {
+    background-image: url("img/full-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: solid 3px red;
+    height: 500px; 
+}
+.power-text {
+    position: relative;
+    top: 15%;
 }
 /* Flex-box */
