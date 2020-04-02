@@ -85,7 +85,7 @@ header {
     width: 40%;
     position: absolute;
     left: 8%;
-    bottom: 45%;
+    bottom: 50%;
     border: solid 3px orange;
 }
 .iphone {
@@ -147,6 +147,21 @@ span {
 .non-textdecoration{
     text-decoration: none;
 }
+input[type=email], select {
+    width: 90%;
+    height: 30px;
+    display: inline-block;
+    border-radius: 4px 0 0 4px;;
+    box-sizing: border-box;
+  }
+.check {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+}
+footer {
+    height: 550px;
+}
 /* Flex-box */
 .flex-column {
     display: flex;
@@ -156,6 +171,7 @@ span {
     display: flex;
     justify-content: space-between;
 }
-footer {
-    height: 700px;
+.justify-left {
+    display: flex;
+    justify-content: left;
 }
