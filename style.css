@@ -6,11 +6,55 @@
 body {
     font-family: 'Open Sans';
 }
+h4 {
+    font-size: 20px;
+    line-height: 60px;
+}
+h5 {
+    font-size: 18px;
+    list-style: 50px;
+}
+h6 {
+    font-size: 14px;
+    line-height: 40px;
+}
 p {
     font-size: 12px;
+    line-height: 18px;
+}
+.p-2 {
+    padding: 2rem;
+}
+.p-3-2 {
+    padding: 3rem 2rem;
+}
+.p-1-0 {
+    padding: 1rem 0;
+}
+.p-7px {
+    padding: 7px;
+}
+.p-0-12px {
+    padding: 0 12px;
+}
+.m-7px-0 {
+    margin: 7px 0;
+}
+.text-black {
+    color: black;
+}
+.text-gris-clair {
+    color: rgb(182, 181, 181);
+}
+.text-white {
+    color: white;
+}
+.font-size-32px {
+    font-size: 42px;
+    line-height: 50px;
 }
 header {
-    background-image: url("img/mastehead.jpg");
+    background-image: url("assets/img/mastehead.jpg");
     background-size: 250%;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,11 +69,13 @@ header {
     width: 18%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: solid 3px violet; 
 }
 .logo {
     width: 25px;
     height: 25px;
+    color: white;
 }
 .logo-take p {
     font-style: italic;
@@ -40,7 +86,6 @@ header {
     position: absolute;
     left: 8%;
     bottom: 45%;
-    color: white;
     border: solid 3px orange;
 }
 .iphone {
@@ -52,27 +97,29 @@ header {
 .violet {
     background-color: #605f7f;
 }
+.gris-clair {
+    background-color: rgb(182, 181, 181);
+}
 .our-clients {
-    background-image: url("img/box-bg.jpg");
+    background-image: url("assets/img/box-bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
 }
 .sign-up {
-    background-image: url("img/box-bg-lg.jpg");
+    background-image: url("assets/img/box-bg-lg.jpg");
     background-repeat: no-repeat;
     background-position: 20%;
     background-size: cover;
 }
 .vert {
     background-color: #83c89c;
-    padding: 3rem 1.5rem;
 }
 .bleu-marin {
     background-color: #172432;
 }
 .power {
-    background-image: url("img/full-image.jpg");
+    background-image: url("assets/img/full-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -82,5 +129,33 @@ header {
 .power-text {
     position: relative;
     top: 15%;
+    height: 60vh;
+}
+span {
+    font-size: 12px;
+    border-radius: 5px;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+}
+.icons {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.non-textdecoration{
+    text-decoration: none;
 }
 /* Flex-box */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.justify-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    height: 700px;
+}
