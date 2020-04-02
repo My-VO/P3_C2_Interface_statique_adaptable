@@ -153,11 +153,17 @@ input[type=email], select {
     display: inline-block;
     border-radius: 4px 0 0 4px;;
     box-sizing: border-box;
-  }
-.check {
+}
+input[type=button] {
     width: 30px;
     height: 30px;
-    font-size: 14px;
+    font-size: 20px;
+    color: white;
+    background-color:  #83c89c;
+}
+.note{
+    color: rgb(77, 118, 165);
+    font-size: 7px;
 }
 footer {
     height: 550px;
