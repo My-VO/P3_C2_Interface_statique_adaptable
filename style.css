@@ -41,7 +41,7 @@ p {
     margin: 7px 0;
 }
 .text-black {
-    color: black;
+    color: rgba(0, 0, 0, 0.824);
 }
 .text-gris-clair {
     color: rgb(182, 181, 181);
@@ -59,7 +59,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     border: solid 3px red;
-    height: 60vh; 
+    height: 58vh; 
 }
 .logo-take {
     position: absolute;
@@ -180,4 +180,72 @@ footer {
 .justify-left {
     display: flex;
     justify-content: left;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles pour cette Media Queries */
+    header{
+        height: 105vh;
+    }
+    .logo-take {
+        width: 10%;
+    }
+    .logo-take p {
+        font-size: 132%;
+    }
+    h1 {
+        font-size : 3em;
+    }
+    h4 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    h5 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .font-size-18px {
+        font-size: 18px;
+    }
+    .text-header {
+        bottom: 26%;
+    }
+    .space-between-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flex-1 {
+        flex: 1;
+    }
+    .p-10px {
+        padding: 10px;
+    }
+    .space-between-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .width-50 {
+        width: 50%;
+    }
+    .power-text {
+        position: relative;
+        top: 15%;
+        height: auto;
+        width: 50%;
+    }
+    .icons {
+        width: 80px;
+    }
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+    span {
+        font-size: 16px;
+    }
+
 }
