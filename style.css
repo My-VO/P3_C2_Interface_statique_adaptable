@@ -66,7 +66,7 @@ header {
     left: 10px;
     top: 10px;
     color: white;
-    width: 18%;
+    width: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,13 +79,13 @@ header {
 }
 .logo-take p {
     font-style: italic;
-    font-size: 100%;
+    font-size: 20px;
 }
 .text-header {
     width: 40%;
     position: absolute;
-    left: 8%;
-    bottom: 50%;
+    left: 30px;
+    top: 250px;
     border: solid 3px orange;
 }
 .iphone {
@@ -186,12 +186,6 @@ footer {
     header{
         height: 105vh;
     }
-    .logo-take {
-        width: 10%;
-    }
-    .logo-take p {
-        font-size: 132%;
-    }
     h1 {
         font-size : 3em;
     }
@@ -210,7 +204,8 @@ footer {
         font-size: 18px;
     }
     .text-header {
-        bottom: 26%;
+        top: 465px;
+        left: 75px;
     }
     .space-between-center{
         display: flex;
@@ -247,5 +242,86 @@ footer {
     span {
         font-size: 16px;
     }
+}
 
+@media only screen and (min-width : 1280px){
+    /* Styles pour cette Media Queries */
+    header {
+        background-size: 100%;
+    }
+    h1 {
+        font-size : 3em;
+    }
+    h4 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    h5 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .font-size-18px {
+        font-size: 18px;
+    }
+    .text-header {
+        bottom: 26%;
+    }
+    .iphone {
+        display: inline;
+        width: 33%;
+        position: absolute;
+        left: 700px;
+        top: 130px;
+    }
+    .p-0-200px {
+        padding: 0 200px;
+    }
+    .space-between-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flex-1 {
+        flex: 1;
+    }
+    .p-10px {
+        padding: 10px;
+    }
+    .space-between-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .width-50 {
+        width: 25%;
+    }
+    .power {
+        height: 600px;
+    }
+    .power-text {
+        position: relative;
+        top: 230px;
+        left: 200px;
+        height: auto;
+        width: 34%;
+    }
+    .text-header {
+        width: max-content;
+        height: max-content;
+        left: 200px;
+        top: 250px;
+    }
+    .icons {
+        width: 80px;
+    }
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+    span {
+        font-size: 16px;
+    }
 }
