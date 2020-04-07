@@ -55,16 +55,17 @@ p {
 }
 header {
     background-image: url("assets/img/mastehead.jpg");
-    background-size: 250%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: solid 3px red;
-    height: 58vh; 
+    padding-top: 25%;
+    padding-bottom: 15%;
 }
 .logo-take {
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    position: relative;
+    left: 7px;
+    top: -79px;
     color: white;
     width: 75px;
     display: flex;
@@ -83,9 +84,8 @@ header {
 }
 .text-header {
     width: 40%;
-    position: absolute;
+    position: relative;
     left: 30px;
-    top: 250px;
     border: solid 3px orange;
 }
 .iphone {
@@ -181,11 +181,9 @@ footer {
     display: flex;
     justify-content: left;
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
     /* Styles pour cette Media Queries */
-    header{
-        height: 105vh;
-    }
+    
     h1 {
         font-size : 3em;
     }
@@ -203,8 +201,10 @@ footer {
     .font-size-18px {
         font-size: 18px;
     }
+    .logo-take {
+        top: -24vh;
+    }
     .text-header {
-        top: 465px;
         left: 75px;
     }
     .space-between-center{
@@ -222,6 +222,9 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .flex-1 {
+        flex: 1;
     }
     .width-50 {
         width: 50%;
@@ -242,13 +245,14 @@ footer {
     span {
         font-size: 16px;
     }
+    .width-100 {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width : 1280px){
     /* Styles pour cette Media Queries */
-    header {
-        background-size: 100%;
-    }
+    
     h1 {
         font-size : 3em;
     }
@@ -266,37 +270,55 @@ footer {
     .font-size-18px {
         font-size: 18px;
     }
+    .logo-take {
+        top: -33vh;
+    }
     .text-header {
-        bottom: 26%;
+        width: max-content;
+        height: max-content;
+        left: 200px;
+    }
+    .flex-1 {
+        flex: 1;
     }
     .iphone {
         display: inline;
         width: 33%;
         position: absolute;
         left: 700px;
-        top: 130px;
+        top: 245px;
     }
     .p-0-200px {
         padding: 0 200px;
+    }
+    .p-50-200px {
+        padding: 50px 200px;
     }
     .space-between-center{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .flex-1 {
-        flex: 1;
-    }
     .p-10px {
         padding: 10px;
+    }
+    .width-33 {
+        width: 33.33%;
+    }
+    .width-66 {
+        width: 66.67%;
+    }
+    .flex-row-wrap {
+        display: flex;
+        flex-wrap: row wrap;
+    }
+    .width-23 {
+        width: 23%;
     }
     .space-between-wrap{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    }
-    .width-50 {
-        width: 25%;
     }
     .power {
         height: 600px;
@@ -308,12 +330,6 @@ footer {
         height: auto;
         width: 34%;
     }
-    .text-header {
-        width: max-content;
-        height: max-content;
-        left: 200px;
-        top: 250px;
-    }
     .icons {
         width: 80px;
     }
@@ -323,5 +339,21 @@ footer {
     }
     span {
         font-size: 16px;
+    }
+    .background-gris-clair {
+        background-color: rgb(242, 245, 247);
+    }
+    .p-30px {
+        padding: 30px;
+    }
+    .box-shadow {
+        border: solid 0.1px;
+        border-radius: 5px;
+        padding: 30px;
+        box-shadow: -1px -1px 8px grey, 1px 1px 8px grey;
+        background-color: white;
+    }
+    .width-48 {
+        width: 48%;
     }
 }
