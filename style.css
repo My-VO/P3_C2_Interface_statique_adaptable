@@ -3,8 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 500 600;
+    src: url("assets/font/OpenSans-Regular.ttf");
+}
 body {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
+}
+h1 {
+    font-family: "Open Sans";
 }
 h4 {
     font-size: 20px;
@@ -120,7 +128,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
-    border: solid 3px red;
     height: 500px; 
 }
 .power-text {
