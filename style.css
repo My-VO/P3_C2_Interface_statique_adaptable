@@ -20,7 +20,7 @@ h4 {
 }
 h5 {
     font-size: 18px;
-    list-style: 50px;
+    line-height: 50px;
 }
 h6 {
     font-size: 14px;
@@ -319,7 +319,7 @@ footer {
     }
     .flex-row-wrap {
         display: flex;
-        flex-wrap: row wrap;
+        flex-flow: row wrap;
     }
     .width-23 {
         width: 23%;
