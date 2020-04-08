@@ -1,8 +1,11 @@
+/*--------- Responsive Mobile -------*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*--------- Font, size --------- */
 @font-face {
     font-family: "Open Sans";
     font-weight: 500 600;
@@ -30,6 +33,30 @@ p {
     font-size: 12px;
     line-height: 18px;
 }
+.font-size-32px {
+    font-size: 42px;
+    line-height: 50px;
+}
+span {
+    font-size: 12px;
+    border-radius: 5px;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+}
+.width-resources-100 {
+    width: 100%;
+}
+.width-resource-33 {
+    width: 33.33%;
+}
+.logo-take p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*------ Padding, Margin ------*/
 .p-2 {
     padding: 2rem;
 }
@@ -48,6 +75,7 @@ p {
 .m-7px-0 {
     margin: 7px 0;
 }
+/*------ Color ------*/
 .text-black {
     color: rgba(0, 0, 0, 0.824);
 }
@@ -57,10 +85,23 @@ p {
 .text-white {
     color: white;
 }
-.font-size-32px {
-    font-size: 42px;
-    line-height: 50px;
+.rose {
+    background-color: #f4979f;
 }
+.violet {
+    background-color: #605f7f;
+}
+.gris-clair {
+    background-color: rgb(182, 181, 181);
+}
+.vert {
+    background-color: #83c89c;
+}
+.bleu-marin {
+    background-color: #172432;
+}
+
+/*------ Elements -----*/
 header {
     background-image: url("assets/img/mastehead.jpg");
     background-size: cover;
@@ -83,10 +124,6 @@ header {
     height: 25px;
     color: white;
 }
-.logo-take p {
-    font-style: italic;
-    font-size: 20px;
-}
 .text-header {
     width: 40%;
     position: absolute;
@@ -95,15 +132,6 @@ header {
 }
 .iphone {
     display: none;
-}
-.rose {
-    background-color: #f4979f;
-}
-.violet {
-    background-color: #605f7f;
-}
-.gris-clair {
-    background-color: rgb(182, 181, 181);
 }
 .our-clients {
     background-image: url("assets/img/box-bg.jpg");
@@ -117,12 +145,6 @@ header {
     background-position: 20%;
     background-size: cover;
 }
-.vert {
-    background-color: #83c89c;
-}
-.bleu-marin {
-    background-color: #172432;
-}
 .power {
     background-image: url("assets/img/full-image.jpg");
     background-size: cover;
@@ -134,14 +156,6 @@ header {
     position: relative;
     top: 15%;
     height: 60vh;
-}
-span {
-    font-size: 12px;
-    border-radius: 5px;
-}
-.icon {
-    width: 24px;
-    height: 24px;
 }
 .icons {
     width: 60px;
@@ -169,10 +183,8 @@ input[type=button] {
     color: rgb(77, 118, 165);
     font-size: 7px;
 }
-footer {
-    height: 550px;
-}
-/* Flex-box */
+
+/*------ Flex-box ------*/
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -185,15 +197,11 @@ footer {
     display: flex;
     justify-content: left;
 }
-.width-resources-100 {
-    width: 100%;
-}
-.width-resource-33 {
-    width: 33.33%;
-}
+
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     /* Styles pour cette Media Queries */
     
+    /*--------- Font, size, padding --------- */
     h1 {
         font-size : 3em;
     }
@@ -210,38 +218,6 @@ footer {
     }
     .font-size-18px {
         font-size: 18px;
-    }
-    .text-header {
-        left: 75px;
-        top: 274px;
-    }
-    .space-between-center{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .flex-1 {
-        flex: 1;
-    }
-    .p-10px {
-        padding: 10px;
-    }
-    .space-between-wrap{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .flex-1 {
-        flex: 1;
-    }
-    .width-50 {
-        width: 50%;
-    }
-    .power-text {
-        position: relative;
-        top: 15%;
-        height: auto;
-        width: 50%;
     }
     .icons {
         width: 80px;
@@ -253,17 +229,51 @@ footer {
     span {
         font-size: 16px;
     }
+    .note {
+        font-size: 12px;
+    }
+    .text-header {
+        left: 75px;
+        top: 274px;
+    }
+    .width-50 {
+        width: 50%;
+    }
     .width-100 {
         width: 100%;
     }
-    .note {
-        font-size: 12px;
+    .p-10px {
+        padding: 10px;
+    }
+
+    /*------- Elements ------*/
+    .power-text {
+        position: relative;
+        top: 15%;
+        height: auto;
+        width: 50%;
+    }
+
+    /*------- Flex-box -----*/
+    .space-between-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flex-1 {
+        flex: 1;
+    }
+    .space-between-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
 @media only screen and (min-width : 1280px){
     /* Styles pour cette Media Queries */
     
+    /*------ Font, size, padding ------*/
     h1 {
         font-size : 3em;
     }
@@ -278,17 +288,75 @@ footer {
         font-size: 14px;
         line-height: 22px;
     }
+    span {
+        font-size: 16px;
+    }
     .font-size-18px {
         font-size: 18px;
     }
+    .width-23 {
+        width: 23%;
+    }
+    .width-33 {
+        width: 33.33%;
+    }
+    .width-48 {
+        width: 48%;
+    }
+    .width-66 {
+        width: 66.67%;
+    }
+    .p-0-200px {
+        padding: 0 200px;
+    }
+    .p-10px {
+        padding: 10px;
+    }
+    .p-30px {
+        padding: 30px;
+    }
+    .p-50-200px {
+        padding: 50px 200px;
+    }
+    .power {
+        height: 600px;
+    }
+    .icons {
+        width: 80px;
+    }
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+    .note {
+        font-size: 9px;
+    }
+    
+    /*------- Flex-box -------*/
+    .flex-1 {
+        flex: 1;
+    }
+    .space-between-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flex-row-wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .space-between-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /*-------- Elements --------*/
     .text-header {
         width: max-content;
         height: max-content;
         left: 200px;
         top: 500px;
-    }
-    .flex-1 {
-        flex: 1;
     }
     .iphone {
         display: inline;
@@ -297,41 +365,6 @@ footer {
         right: 130px;
         top: 600px;
     }
-    .p-0-200px {
-        padding: 0 200px;
-    }
-    .p-50-200px {
-        padding: 50px 200px;
-    }
-    .space-between-center{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .p-10px {
-        padding: 10px;
-    }
-    .width-33 {
-        width: 33.33%;
-    }
-    .width-66 {
-        width: 66.67%;
-    }
-    .flex-row-wrap {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .width-23 {
-        width: 23%;
-    }
-    .space-between-wrap{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .power {
-        height: 600px;
-    }
     .power-text {
         position: relative;
         top: 230px;
@@ -339,33 +372,14 @@ footer {
         height: auto;
         width: 34%;
     }
-    .icons {
-        width: 80px;
-    }
-    .icon {
-        width: 36px;
-        height: 36px;
-    }
-    span {
-        font-size: 16px;
-    }
     .background-gris-clair {
         background-color: rgb(242, 245, 247);
-    }
-    .p-30px {
-        padding: 30px;
     }
     .box-shadow {
         border: solid 0.1px;
         border-radius: 5px;
         padding: 30px;
-        box-shadow: 0 0 7px 0 #8d8d8d;        ;
+        box-shadow: 0 0 7px 0 #8d8d8d;
         background-color: white;
-    }
-    .width-48 {
-        width: 48%;
-    }
-    .note {
-        font-size: 9px;
     }
 }
